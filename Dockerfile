@@ -1,7 +1,7 @@
 ARG PYTHON_IMAGE_VERSION=3.12-slim
 
 # Build stage
-FROM python:${PYTHON_IMAGE_VERSION} as builder
+FROM python:${PYTHON_IMAGE_VERSION} AS builder
 
 # Pre-configure Poetry
 ENV PYTHONUNBUFFERED=1 \
