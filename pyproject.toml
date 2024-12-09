@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "rag-modulo-mlflow"
+version = "1.0.0"
+description = "MLFlow container image for RAG Modulo with Postgres, AWS S3 support"
+authors = ["Jacques-Sylvain Lecointre <js.lecointre@ibm.com>", "Maksym Tykhenko <Maksym.Tykhenko@ibm.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+# MLFlow
+mlflow = "2.18.0"
+
+# PostgreSQL support
+psycopg2 = "^2.9.9"
+
+# AWS S3 Artifact Store support
+boto3 = "^1.35.71"
+
+[build-system]
+requires = ["poetry-core>=1.9.0"]
+build-backend = "poetry.core.masonry.api"

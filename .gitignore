@@ -1,0 +1,11 @@
+# Ignore virtual environments
+venv/
+env/
+.venv/
+
+# Ignore editor files
+.vscode/
+.idea/
+
+# ignore nektos act folder
+.act
