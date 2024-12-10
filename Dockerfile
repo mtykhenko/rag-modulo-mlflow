@@ -50,4 +50,4 @@ RUN groupadd --gid 10001 mlflow && \
 USER mlflow
 
 EXPOSE 5000
-CMD ["mlflow", "server", "--host", "0.0.0.0", "--app-name", "basic-auth", "--port", "5000"]
+CMD ["sh", "-c", "mlflow server --host 0.0.0.0 --app-name basic-auth --port 5000 --backend-store-uri $BACKEND_STORE_URI"]
